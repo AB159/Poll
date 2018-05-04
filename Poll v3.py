@@ -2,6 +2,18 @@
 Poll v 3.0
 By Alex 5/1=4/2018
 '''
+names = {}
+try:    
+    file = open("file.txt", "r")
+    names = file.read()
+    names = ast.literal_eval(names)
+    file.close()
+except:
+    names = {}
+
+
+
+
 from tkinter import *
 import ast
 root = Tk()
@@ -16,10 +28,14 @@ textbox2 = Entry(root)
 textbox1.grid(row=0, column=1)
 textbox2.grid(row=1, column=1)
 
-btn1 = Button(root, text= "Submit", command=root.destroy)
+btn1 = Button(root, text= "Submit", command=submit)
 btn1.grid(row=2,column=0)
 btn2 = Button(root, text= "Average", command=root.destroy)
 btn2.grid(row=2,column=1)
 btn3 = Button(root, text= "Quit", command=root.destroy)
 btn3.grid(row=2,column=2)
 
+def submit():
+    
+    if name == ""
+    
