@@ -23,7 +23,7 @@ while True:
     if len(name) < 1:
         print("You have to type something!")
         continue
-    if len(name) > 1:
+    if len(name) > 0:
         while True:
             answer = input(str("How many siblings do you have?"))
             try:
