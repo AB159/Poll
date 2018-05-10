@@ -18,7 +18,7 @@ while True:
         print("Already have that name")
         continue
     if name == "quit":
-        print("Average is " + str(sum(names.values()) / len(names)))
+        print("Average is ", sum(names.values()/len(names))
         break
     if len(name) < 1:
         print("You have to type something!")
